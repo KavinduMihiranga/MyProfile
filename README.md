@@ -1,6 +1,7 @@
 # This is my Profile
 
-## Institute of Software Engineering
+## Kavindu Mihiranga
 
-![My Profile](assets/images/ijse.png)
+![My Profile](assets/images/prf.png)
+
 
