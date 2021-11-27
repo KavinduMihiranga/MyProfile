@@ -7,12 +7,36 @@
     <meta name="keyWords" content="Kavindu Mihiranga,Kavindu,Mihiranga,IJSE">
     <meta name="description" content="This is My Profile">
 
-    <h2><mark>Home</mark></h2>
-    <h2><mark>About</mark></h2>
-    <h2><mark>Skill</mark></h2>
-    <h2><mark>Project</mark></h2>
-    <h2><mark>Education</mark></h2>
-    <h2><mark>Contact</mark></h2>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <h2>
+        <mark>Home</mark>
+    </h2>
+    <h2>
+        <mark>About</mark>
+    </h2>
+    <h2>
+        <mark>Skill</mark>
+    </h2>
+    <h2>
+        <mark>Project</mark>
+    </h2>
+    <h2>
+        <mark>Education</mark>
+    </h2>
+    <h2>
+        <mark>Contact</mark>
+    </h2>
+
+    <style>
+        body{
+            background-image: url("assets/images/background_home.jpeg");
+            background-size: 800px 400px;
+            position: relative;
+            background-repeat:no-repeat ;
+            background-position:top 10px ;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -143,11 +167,26 @@
             <h1>Contact</h1>
             <section>
 
-                <p>Name</p>
-                <p>Subject</p>
-                <p>Comment</p>
-                <p><mark>Submit</mark></p>
+                <form action="">
+                    <fieldset>
+                        <legend>Your Comment</legend>
+                        <label for="Name">Name</label>
+                        <input type="Name" placeholder="Name">
 
+                        <br><br>
+
+                        <label for="Subject">Subject</label>
+                        <input type="Subject" placeholder="Subject">
+
+                        <br><br>
+
+                        <label for="Comment">Comment</label>
+                        <textarea type="Comment" placeholder="Comment"></textarea>
+
+                        <br><br>
+                        <button>Submit</button>
+                    </fieldset>
+                </form>
                 <!-- image -->
 
 
@@ -186,8 +225,8 @@
 </main>
 <footer>
     <small>
-                copyright &#169 all right recieved
-            Website powered by Kavindu Mihiranga
+        copyright &#169 all right recieved
+        Website powered by Kavindu Mihiranga
     </small>
 </footer>
 </body>
