@@ -3,71 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <title>My Profile(Kavindu Mihiranga)</title>
-    <link rel="icon" href="assets/images/prf.png">
-    <meta name="keyWords" content="Kavindu Mihiranga,Kavindu,Mihiranga,IJSE">
-    <meta name="description" content="This is My Profile">
+    <link href="assets/images/prf.png" rel="icon">
+    <meta content="Kavindu Mihiranga,Kavindu,Mihiranga,IJSE" name="keyWords">
+    <meta content="This is My Profile" name="description">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <h2>
-        <mark>Home</mark>
-    </h2>
-    <h2>
-        <mark>About</mark>
-    </h2>
-    <h2>
-        <mark>Skill</mark>
-    </h2>
-    <h2>
-        <mark>Project</mark>
-    </h2>
-    <h2>
-        <mark>Education</mark>
-    </h2>
-    <h2>
-        <mark>Contact</mark>
-    </h2>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+
 
     <style>
-        body{
-            background-image: url("assets/images/background_home.jpeg");
-            background-size: 800px 400px;
-            position: relative;
-            background-repeat:no-repeat ;
-            background-position:top 10px ;
+        /*!*!*background image*!*!*/
+        /*body{*/
+        /*    background-image: url("assets/images/background_home.jpeg");*/
+        /*    background-size: 800px 400px;*/
+        /*    position: relative;*/
+        /*    background-repeat:no-repeat ;*/
+        /*    background-position:top 100px ;*/
 
+        /*}*/
+        /*logo*/
+        body > header > img {
+            width: 411px;
+            top: -42px;
+            left: -84px;
+            bottom: 0;
+            margin: auto;
+            display: inline;
+            transform: rotate(-16grad);
+            position: absolute;
+        }
+
+        header {
+            position: relative;
+            height: 80px;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            background-color: #0a2232;
+        }
+
+        header > ul {
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+
+            list-style: none;
+            font-size: 30px;
+            color: #a8e9f3;
+
+        }
+
+        header > ul > li {
+            padding: 0 10px 0 10px;
+            display: inline-block;
+        }
+
+        header > ul > li:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        /*background image*/
+        main > section > section > image {
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            margin-top: auto;
+            z-index: -10;
+
+        }
+
+        /*other nav image*/
+        main > section > section > figure > nav {
+            position: absolute;
+            display: block;
+            top: 90px;
+            left: 0px;
+            margin: auto;
+        }
+
+        /*background color*/
+        main {
+            background-color: #6a6464;
+        }
+
+        main > section > section > figure {
+
+            position: absolute;
+            top: 120px;
+            left: 0;
+            margin: auto;
+        }
+
+        /*about*/
+        main > section > section:nth-child(2) > h1 {
+            position: absolute;
+            top: 50%;
+            width: 50%;
+            left: 50%;
+            display: inline;
+        }
+
+        /*paragraph*/
+        main > section > section:nth-child(2) > article {
+            position: absolute;
+            top: 60%;
+            width: 50%;
+            left: 0;
+            display: inline;
+        }
+
+        main>section>section>:nth-child(2)>img{
+            position: absolute;
+            top: 60%;
+            right: 0;
+            margin: auto;
+            display: inline;
         }
     </style>
 </head>
 
 <body>
 <header>
-    <nav>
+    <!--    logo-->
+    <img alt="logo" src="assets/images/logo2.png">
 
-    </nav>
+    <!--    list-->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Skill</li>
+        <li>Project</li>
+        <li>Education</li>
+        <li>Contact</li>
+    </ul>
 
 </header>
 <main>
     <section>
         <section>
+            <img alt="image" src="assets/images/background_home.jpeg">
             <figure>
                 <nav>
                     <!-- image -->
-                    <img src="assets/images/facebook.png" alt="facebook icon" width="50">
+                    <img alt="facebook icon" src="assets/images/facebook.png" width="50">
                     <!-- image -->
-                    <img src="assets/images/whatsapp.png" alt="whatsupp icon" width="50">
+                    <img alt="whatsupp icon" src="assets/images/whatsapp.png" width="50">
                     <!-- image -->
-                    <img src="assets/images/gmail.png" alt="email icon" width="50">
+                    <img alt="email icon" src="assets/images/gmail.png" width="50">
                     <!-- image -->
-                    <img src="assets/images/linkedin.png" alt="linkedin icon" width="50">
+                    <img alt="linkedin icon" src="assets/images/linkedin.png" width="50">
                     <!-- image -->
-                    <img src="assets/images/instergram.png" alt="instergram icon" width="50">
+                    <img alt="instergram icon" src="assets/images/instergram.png" width="50">
                 </nav>
 
                 <div>
-                    <nav>
 
-                    </nav>
-                    <h1>Home</h1>
+                    <!--                    <h1>Home</h1>-->
                     <pre>
                         <b>Hello'
                             I'm Kavindu Mihiranga</b>
@@ -96,13 +187,13 @@
                             Agalawatta.
                 Birthday  : <time datetime="1999-03-09">1999-03-09</time>
                 School    : Mihindu Central College
-                Phone No  : <a href="tell:+94783688031" 0783688031><abbr title="Click to Call">+94765453914</abbr></a>
-                Phone No  : <a href="tell:+94765453914" 0765453914><abbr title="Click to Call">+94765453914</abbr></a>
-                    <a href="assets/CV" download="assets/CV">Download CV</a>
+                Phone No  : <a 0783688031 href="tell:+94783688031"><abbr title="Click to Call">+94765453914</abbr></a>
+                Phone No  : <a 0765453914 href="tell:+94765453914"><abbr title="Click to Call">+94765453914</abbr></a>
+                    <a download="assets/CV" href="assets/CV">Download CV</a>
                 </pre>
             </article>
             <!-- image -->
-            <img src="assets/images/prf.png" alt="profile picture" width="600">
+            <img alt="profile picture" src="assets/images/prf.png" width="600">
 
         </section>
         <section>
@@ -110,40 +201,40 @@
             <h1>Skill</h1>
 
             <!-- image -->
-            <img src="assets/images/java.png" alt="java icon" width="200">
+            <img alt="java icon" src="assets/images/java.png" width="200">
             <figcaption>JAVA</figcaption>
             <!-- image -->
-            <img src="assets/images/html.png" alt="html icon" width="200">
+            <img alt="html icon" src="assets/images/html.png" width="200">
             <figcaption>HTML</figcaption>
             <!-- image -->
-            <img src="assets/images/mysql.png" alt="mysql icon" width="200">
+            <img alt="mysql icon" src="assets/images/mysql.png" width="200">
             <figcaption>MYSQL</figcaption>
             <!-- image -->
-            <img src="assets/images/js.png" alt="javascript icon" width="200">
+            <img alt="javascript icon" src="assets/images/js.png" width="200">
             <figcaption>JACASCRIPT</figcaption>
             <!-- image -->
-            <img src="assets/images/css.png" alt="css" width="200">
+            <img alt="css" src="assets/images/css.png" width="200">
             <figcaption>CSS</figcaption>
             <!-- image -->
-            <img src="assets/images/ilustraterr.png" alt="illustrator icon" width="200">
+            <img alt="illustrator icon" src="assets/images/ilustraterr.png" width="200">
             <figcaption>ILLUSTRATOR</figcaption>
-            <img src="assets/images/photoshop.png" alt="photoshop icon" width="200">
+            <img alt="photoshop icon" src="assets/images/photoshop.png" width="200">
             <figcaption>PHOTOSHOP</figcaption>
 
         </section>
         <section>
             <h1>Project</h1>
             <!-- image -->
-            <img src="assets/images/super_wholesale.jfif" alt="super_wholesale image" width="200">
+            <img alt="super_wholesale image" src="assets/images/super_wholesale.jfif" width="200">
             <figcaption>Super Wholesale</figcaption>
             <!-- image -->
-            <img src="assets/images/medical_center.jfif" alt="medical center image" width="200" height="150">
+            <img alt="medical center image" height="150" src="assets/images/medical_center.jfif" width="200">
             <figcaption>Medical Center</figcaption>
             <!-- image -->
-            <img src="assets/images/vehical_parking.jpg" alt="vehicle parking image" width="200">
+            <img alt="vehicle parking image" src="assets/images/vehical_parking.jpg" width="200">
             <figcaption>Vehicle Parking</figcaption>
             <!-- image -->
-            <img src="assets/images/hotel_img.jpg" alt="hotel_system image" width="200">
+            <img alt="hotel_system image" src="assets/images/hotel_img.jpg" width="200">
             <figcaption>Blue Ocean Hotel</figcaption>
 
 
@@ -152,12 +243,12 @@
         <section>
             <h1>Education</h1>
             <!-- image -->
-            <img src="assets/images/ijse.png" alt="ijse icon" width="200">
+            <img alt="ijse icon" src="assets/images/ijse.png" width="200">
             <p>
                 IJSE <abbr title="Graduate Diploma Software Engineering">GDSE</abbr>
             </p>
             <!-- image -->
-            <img src="assets/images/school_image.png" alt="school_image" width="200">
+            <img alt="school_image" src="assets/images/school_image.png" width="200">
             <pre>
                 My primary and higher education in Mihindu Central College Agalawatta
                 2005-2018
@@ -171,17 +262,17 @@
                     <fieldset>
                         <legend>Your Comment</legend>
                         <label for="Name">Name</label>
-                        <input type="Name" placeholder="Name">
+                        <input placeholder="Name" type="Name">
 
                         <br><br>
 
                         <label for="Subject">Subject</label>
-                        <input type="Subject" placeholder="Subject">
+                        <input placeholder="Subject" type="Subject">
 
                         <br><br>
 
                         <label for="Comment">Comment</label>
-                        <textarea type="Comment" placeholder="Comment"></textarea>
+                        <textarea placeholder="Comment" type="Comment"></textarea>
 
                         <br><br>
                         <button>Submit</button>
@@ -193,17 +284,17 @@
             </section>
             <list>
                 <!-- image -->
-                <img src="assets/images/phone-call.png" alt="call image" width="50">
+                <img alt="call image" src="assets/images/phone-call.png" width="50">
                 <pre>
                HOTLINE
-                <a href="tell:+94783688031" 0783688031><abbr title="Click to Call">0783688031</abbr></a>
-                <a href="tell:+94765453914" 0765453914><abbr title="Click to Call">0765453914</abbr></a>
+                <a 0783688031 href="tell:+94783688031"><abbr title="Click to Call">0783688031</abbr></a>
+                <a 0765453914 href="tell:+94765453914"><abbr title="Click to Call">0765453914</abbr></a>
                 </pre>
             </list>
             <br>
             <list>
                 <!-- image -->
-                <img src="assets/images/placeholder.png" alt="place image" width="50">
+                <img alt="place image" src="assets/images/placeholder.png" width="50">
                 <pre>
                 LOCATION
                 </pre>
@@ -211,7 +302,7 @@
             <br>
             <list>
                 <!-- image -->
-                <img src="assets/images/gmail.png" alt="email image" width="50">
+                <img alt="email image" src="assets/images/gmail.png" width="50">
                 <pre>
                 EMAIL
                 <a href="mail:mihirangak1999@gmail.com" mihirangak1999@gmail.com><abbr title="Click to send Mail">mihirangak1999@gmail.com</abbr></a>
