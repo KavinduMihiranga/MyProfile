@@ -13,23 +13,27 @@
 
     <style>
         /*!*!*background image*!*!*/
-        /*body{*/
-        /*    background-image: url("assets/images/background_home.jpeg");*/
-        /*    background-size: 800px 400px;*/
-        /*    position: relative;*/
-        /*    background-repeat:no-repeat ;*/
-        /*    background-position:top 100px ;*/
+        body{
+            background-image: url("assets/images/background_home.jpeg");
+            background-size: 800px 400px;
+            position: relative;
+            background-repeat:no-repeat ;
+            background-position:top 100px ;
 
-        /*}*/
+        }
+        body>header{
+            position: relative;
+
+        }
         /*logo*/
         body > header > img {
             width: 411px;
-            top: -42px;
-            left: -84px;
+            top: 0;
+            left: 0;
             bottom: 0;
             margin: auto;
             display: inline;
-            transform: rotate(-16grad);
+            transform: rotate(-3grad);
             position: absolute;
         }
 
@@ -61,6 +65,7 @@
             cursor: pointer;
         }
 
+
         /*background image*/
         main > section > section > image {
             background-repeat: no-repeat;
@@ -69,6 +74,11 @@
             width: 100vw;
             margin-top: auto;
             z-index: -10;
+
+            /*display: block;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            /*width: 50%;*/
 
         }
 
@@ -97,28 +107,204 @@
         /*about*/
         main > section > section:nth-child(2) > h1 {
             position: absolute;
-            top: 50%;
+            top: 0%;
             width: 50%;
             left: 50%;
-            display: inline;
+            display: block;
         }
 
         /*paragraph*/
-        main > section > section:nth-child(2) > article {
+        main > section > section:nth-child(2) > article>pre {
             position: absolute;
-            top: 60%;
+            top: 50%;
             width: 50%;
-            left: 0;
-            display: inline;
+            left: 0%;
+            display: block;
+            font-size: x-large;
+            margin: auto;
+            margin-top: 5%;
+        }
+        main>section>section{
+            position: relative;
         }
 
-        main>section>section>:nth-child(2)>img{
-            position: absolute;
-            top: 60%;
-            right: 0;
+        /*image*/
+        /*main>section>section>image{*/
+        /*    !*position: absolute;*!*/
+        /*    !*top: 60%;*!*/
+        /*    !*left: 80%%;*!*/
+        /*    !*margin: auto;*!*/
+        /*    !*display: inline;*!*/
+        /*    !*width: 500px;*!*/
+        /*    background-color: red;*/
+        /*}*/
+
+        main>section>section:nth-child(2){
+            /*background-color: red;*/
+        }
+
+
+        #profilePic{
+            right: 0%;
+            top: 10%;
             margin: auto;
+            width: 70%;
+            display: inline;
+            position: absolute;
+        }
+        /*skill*/
+        body>main>section>section:nth-child(3)>h1{
+            display: block;
+            position: relative;
+            top: 25em;
+            left: 50%;
+            /*margin: auto;*/
+            z-index: 10;
+        }
+        body>main>section>section:nth-child(3)>section{
+            position: relative;
+            display: flex;
+            top: 80%;
+            margin-top: 60%;
+        }
+
+       #javaImg{
+           width: 200px;
+           display: inline;
+       }
+        #htmlImg{
+            width: 200px;
             display: inline;
         }
+        #mysqlImg{
+            width: 200px;
+        }
+        #JsImg{
+            width: 200px;
+        }
+        #cssImg{
+            width: 200px;
+        }
+        #illustraterImg{
+            width: 200px;
+        }
+        #photoshopImg{
+            width: 200px;
+        }
+
+        /*project*/
+        main>section>section:nth-child(4)>h1{
+            display: block;
+            position: relative;
+            top: 30px;
+            left: 50%;
+            margin: auto;
+        }
+        body>main>section>section:nth-child(4)>section{
+            position: relative;
+            display: flex;
+            top: 30%;
+            margin-top: 5%;
+        }
+        #superWholesaleImg{
+            width: 200px;
+        }
+        #medicalCenterImg{
+            width: 200px;
+        }
+        #vehicleParkingImg{
+            width: 200px;
+        }
+        #hotelImg{
+            width: 200px;
+        }
+
+        /*education*/
+        main>section>section:nth-child(5)>h1{
+            display: block;
+            position: relative;
+            top: 30px;
+            left: 50%;
+            margin: auto;
+        }
+        #ijseImg{
+            width: 200px;
+        }
+        #schoolImg{
+            width: 200px;
+        }
+
+        /*contact*/
+        main>section>section:nth-child(6)>h1{
+            display: block;
+            position: relative;
+            top: 30px;
+            left: 50%;
+            margin: auto;
+        }
+        main>section>section:nth-child(6)>section{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            display: inline-block;
+
+        }
+        #callImg{
+            width: 50px;
+            right:-55%;
+            top: -110px;
+            position: relative;
+            margin: auto;
+        }
+        #placeImg{
+            width: 50px;
+            right:-55%;
+            top: -110px;
+            position: relative;
+            margin: auto;
+        }
+        #emailImg{
+            width: 50px;
+            right:-55%;
+            top: -110px;
+            position: relative;
+            margin: auto;
+        }
+        main>section>section:nth-child(6)>li{
+            background-color: red;
+        }
+        #telephonePre{
+            width: 50px;
+            right: -20%;
+            top: -110px;
+            position: relative;
+            margin: auto;
+        }
+        #locationPre{
+            width: 50px;
+            right: -20%;
+            top: -110px;
+            position: relative;
+            margin: auto;
+        }
+        #emailPre{
+            width: 50px;
+            right: -20%;
+            top: -110px;
+            position: relative;
+            margin: auto;
+        }
+        /*footer*/
+        body>footer{
+            /*background-color: red;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            /*bottom: 0;*/
+            /*left: 0;*/
+            /*margin: auto;*/
+            /*position: absolute;*/
+        }
+
     </style>
 </head>
 
@@ -193,62 +379,69 @@
                 </pre>
             </article>
             <!-- image -->
-            <img alt="profile picture" src="assets/images/prf.png" width="600">
+            <img id="profilePic" alt="profile picture" src="assets/images/prf.png">
 
         </section>
         <section>
 
             <h1>Skill</h1>
 
-            <!-- image -->
-            <img alt="java icon" src="assets/images/java.png" width="200">
-            <figcaption>JAVA</figcaption>
-            <!-- image -->
-            <img alt="html icon" src="assets/images/html.png" width="200">
-            <figcaption>HTML</figcaption>
-            <!-- image -->
-            <img alt="mysql icon" src="assets/images/mysql.png" width="200">
-            <figcaption>MYSQL</figcaption>
-            <!-- image -->
-            <img alt="javascript icon" src="assets/images/js.png" width="200">
-            <figcaption>JACASCRIPT</figcaption>
-            <!-- image -->
-            <img alt="css" src="assets/images/css.png" width="200">
-            <figcaption>CSS</figcaption>
-            <!-- image -->
-            <img alt="illustrator icon" src="assets/images/ilustraterr.png" width="200">
-            <figcaption>ILLUSTRATOR</figcaption>
-            <img alt="photoshop icon" src="assets/images/photoshop.png" width="200">
-            <figcaption>PHOTOSHOP</figcaption>
+            <section>
+                <!-- image -->
+                <img id="javaImg" alt="java icon" src="assets/images/java.png">
+                <figcaption>JAVA</figcaption>
+                <!-- image -->
+                <img id="htmlImg" alt="html icon" src="assets/images/html.png">
+                <figcaption>HTML</figcaption>
+                <!-- image -->
+                <img id="mysqlImg" alt="mysql icon" src="assets/images/mysql.png">
+                <figcaption>MYSQL</figcaption>
+                <!-- image -->
+                <img id="JsImg" alt="javascript icon" src="assets/images/js.png">
+                <figcaption>JACASCRIPT</figcaption>
+                <!-- image -->
+                <img id="cssImg" alt="css" src="assets/images/css.png">
+                <figcaption>CSS</figcaption>
+                <!-- image -->
+                <img id="illustraterImg" alt="illustrator icon" src="assets/images/ilustraterr.png">
+                <figcaption>ILLUSTRATOR</figcaption>
+                <img id="photoshopImg" alt="photoshop icon" src="assets/images/photoshop.png">
+                <figcaption>PHOTOSHOP</figcaption>
+
+            </section>
 
         </section>
         <section>
             <h1>Project</h1>
-            <!-- image -->
-            <img alt="super_wholesale image" src="assets/images/super_wholesale.jfif" width="200">
-            <figcaption>Super Wholesale</figcaption>
-            <!-- image -->
-            <img alt="medical center image" height="150" src="assets/images/medical_center.jfif" width="200">
-            <figcaption>Medical Center</figcaption>
-            <!-- image -->
-            <img alt="vehicle parking image" src="assets/images/vehical_parking.jpg" width="200">
-            <figcaption>Vehicle Parking</figcaption>
-            <!-- image -->
-            <img alt="hotel_system image" src="assets/images/hotel_img.jpg" width="200">
-            <figcaption>Blue Ocean Hotel</figcaption>
+
+            <section>
+                <!-- image -->
+                <img id="superWholesaleImg" alt="super_wholesale image" src="assets/images/super_wholesale.jfif">
+                <figcaption>Super Wholesale</figcaption>
+                <!-- image -->
+                <img id="medicalCenterImg" alt="medical center image" height="150" src="assets/images/medical_center.jfif">
+                <figcaption>Medical Center</figcaption>
+                <!-- image -->
+                <img id="vehicleParkingImg" alt="vehicle parking image" src="assets/images/vehical_parking.jpg">
+                <figcaption>Vehicle Parking</figcaption>
+                <!-- image -->
+                <img id="hotelImg" alt="hotel_system image" src="assets/images/hotel_img.jpg">
+                <figcaption>Blue Ocean Hotel</figcaption>
+                <!-- image -->
+            </section>
 
 
-            <!-- image -->
+
         </section>
         <section>
             <h1>Education</h1>
             <!-- image -->
-            <img alt="ijse icon" src="assets/images/ijse.png" width="200">
+            <img id="ijseImg" alt="ijse icon" src="assets/images/ijse.png">
             <p>
                 IJSE <abbr title="Graduate Diploma Software Engineering">GDSE</abbr>
             </p>
             <!-- image -->
-            <img alt="school_image" src="assets/images/school_image.png" width="200">
+            <img id="schoolImg" alt="school_image" src="assets/images/school_image.png">
             <pre>
                 My primary and higher education in Mihindu Central College Agalawatta
                 2005-2018
@@ -284,8 +477,8 @@
             </section>
             <list>
                 <!-- image -->
-                <img alt="call image" src="assets/images/phone-call.png" width="50">
-                <pre>
+                <img id="callImg" alt="call image" src="assets/images/phone-call.png">
+                <pre id="telephonePre">
                HOTLINE
                 <a 0783688031 href="tell:+94783688031"><abbr title="Click to Call">0783688031</abbr></a>
                 <a 0765453914 href="tell:+94765453914"><abbr title="Click to Call">0765453914</abbr></a>
@@ -294,16 +487,16 @@
             <br>
             <list>
                 <!-- image -->
-                <img alt="place image" src="assets/images/placeholder.png" width="50">
-                <pre>
+                <img id="placeImg" alt="place image" src="assets/images/placeholder.png">
+                <pre id="locationPre">
                 LOCATION
                 </pre>
             </list>
             <br>
             <list>
                 <!-- image -->
-                <img alt="email image" src="assets/images/gmail.png" width="50">
-                <pre>
+                <img id="emailImg" alt="email image" src="assets/images/gmail.png">
+                <pre id="emailPre">
                 EMAIL
                 <a href="mail:mihirangak1999@gmail.com" mihirangak1999@gmail.com><abbr title="Click to send Mail">mihirangak1999@gmail.com</abbr></a>
 
