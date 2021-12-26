@@ -13,18 +13,20 @@
 
     <style>
         /*!*!*background image*!*!*/
-        body{
+        body {
             background-image: url("assets/images/background_home.jpeg");
             background-size: 800px 400px;
             position: relative;
-            background-repeat:no-repeat ;
-            background-position:top 100px ;
+            background-repeat: no-repeat;
+            background-position: top 100px;
 
         }
-        body>header{
+
+        body > header {
             position: relative;
 
         }
+
         /*logo*/
         body > header > img {
             width: 411px;
@@ -87,7 +89,7 @@
             position: absolute;
             display: block;
             top: 90px;
-            left: 0px;
+            left: 0;
             margin: auto;
         }
 
@@ -105,27 +107,39 @@
         }
 
         /*about*/
-        main > section > section:nth-child(2) > h1 {
+        main > section > section:nth-child(2) {
+            height: 65px;
+            background-color: #d7c5c5;
+            top: -4px;
+        }
+
+        main > section > section:nth-child(2) > div > h1 {
             position: absolute;
-            top: 0%;
+            top: -83%;
             width: 50%;
             left: 50%;
             display: block;
+            font-size: 60px;
         }
 
+
         /*paragraph*/
-        main > section > section:nth-child(2) > article>pre {
+        main > section > section:nth-child(2) > article > pre {
             position: absolute;
-            top: 50%;
+            top: 100%;
             width: 50%;
-            left: 0%;
+            left: -10%;
             display: block;
             font-size: x-large;
             margin: auto;
             margin-top: 5%;
+
+
         }
-        main>section>section{
+
+        main > section > section {
             position: relative;
+
         }
 
         /*image*/
@@ -139,170 +153,386 @@
         /*    background-color: red;*/
         /*}*/
 
-        main>section>section:nth-child(2){
+        main > section > section:nth-child(2) {
             /*background-color: red;*/
         }
 
 
-        #profilePic{
+        #profilePic {
             right: 0%;
             top: 10%;
             margin: auto;
             width: 70%;
             display: inline;
             position: absolute;
+
         }
-        /*skill*/
-        body>main>section>section:nth-child(3)>h1{
-            display: block;
+
+        skill
+        body > main > section > section:nth-child(3) {
+            height: 400px;
             position: relative;
-            top: 25em;
-            left: 50%;
-            /*margin: auto;*/
-            z-index: 10;
         }
-        body>main>section>section:nth-child(3)>section{
+        body > main > section > section:nth-child(3) > div{
+            background-color: #d7c5c5;
+            position: absolute;
+            height: 65px;
+            top: -61%;
+            width: 100%;
+        }
+        body > main > section > section:nth-child(3) > div>h1 {
+            display: block;
+            /*position: relative;*/
+            position: absolute;
+            /*top: 25em;*/
+            top: -5px;
+            /*left: 0;*/
+            left: 50%;
+            right: 0;
+            margin: auto;
+            z-index: 10;
+            font-size: 60px;
+        }
+
+        body > main > section > section:nth-child(3) > section {
             position: relative;
             display: flex;
             top: 80%;
             margin-top: 60%;
+            flex-wrap: wrap;
+            flex-basis: 100px;
         }
 
-       #javaImg{
-           width: 200px;
-           display: inline;
-       }
-        #htmlImg{
+        #javaImg {
+            width: 200px;
+            display: inline;
+
+        }
+
+        #htmlImg {
             width: 200px;
             display: inline;
         }
-        #mysqlImg{
-            width: 200px;
-        }
-        #JsImg{
-            width: 200px;
-        }
-        #cssImg{
-            width: 200px;
-        }
-        #illustraterImg{
-            width: 200px;
-        }
-        #photoshopImg{
+
+        #mysqlImg {
             width: 200px;
         }
 
-        /*project*/
-        main>section>section:nth-child(4)>h1{
-            display: block;
-            position: relative;
-            top: 30px;
-            left: 50%;
-            margin: auto;
+        #JsImg {
+            width: 200px;
         }
-        body>main>section>section:nth-child(4)>section{
+
+        #cssImg {
+            width: 200px;
+        }
+
+        #illustraterImg {
+            width: 200px;
+        }
+
+        #photoshopImg {
+            width: 200px;
+        }
+
+
+        /*project*/
+        main>section>section:nth-child(4)>div{
+            background-color: #d7c5c5;
+            position: absolute;
+            height: 65px;
+            top: 0;
+            width: 100%;
+        }
+
+        body > main > section > section:nth-child(4) {
+            height: 400px;
+            position: relative;
+        }
+
+        main > section > section:nth-child(4) > div>h1 {
+            display: block;
+            /*position: relative;*/
+            position: absolute;
+            /*top: 30px;*/
+            top: -10px;
+            /*left: 0;*/
+            left: 50%;
+            right: 0;
+            margin: auto;
+            font-size: 60px;
+        }
+
+        body > main > section > section:nth-child(4) > section {
             position: relative;
             display: flex;
             top: 30%;
             margin-top: 5%;
+            flex-wrap: wrap;
         }
-        #superWholesaleImg{
+
+        #superWholesaleImg {
             width: 200px;
         }
-        #medicalCenterImg{
+
+        #medicalCenterImg {
             width: 200px;
         }
-        #vehicleParkingImg{
+
+        #vehicleParkingImg {
             width: 200px;
         }
-        #hotelImg{
+
+        #hotelImg {
             width: 200px;
         }
 
         /*education*/
-        main>section>section:nth-child(5)>h1{
+        main > section > section:nth-child(5) {
+            height: 300px;
+        }
+        main>section>section:nth-child(5)>div{
+            background-color: #d7c5c5;
+            position: absolute;
+            height: 65px;
+            top: 157px;
+            width: 100%;
+        }
+        main > section > section:nth-child(5) > div>h1 {
             display: block;
-            position: relative;
-            top: 30px;
+            /*position: relative;*/
+            position: absolute;
+            /*top: 30px;*/
+            /*left: 0;*/
             left: 50%;
+            right: 0;
             margin: auto;
+            font-size: 60px;
+
         }
-        #ijseImg{
-            width: 200px;
+
+        main > section > section:nth-child(5) > div:nth-child(2) {
+            position: relative;
+            height: 120px;
+            background-color: #a39393;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
-        #schoolImg{
+
+        main > section > section:nth-child(5) > div:nth-child(3) {
+            position: relative;
+            height: 120px;
+            background-color: #a39393;
+            top: 115%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #ijseImg {
             width: 200px;
+            top: 0;
+            left: 50px;
+            position: absolute;
+            margin: auto;
+            bottom: 0;
+        }
+
+        #schoolImg {
+            width: 200px;
+            top: 0;
+            left: 50px;
+            position: absolute;
+            margin: auto;
+            bottom: 0;
+        }
+
+        main > section > section:nth-child(5) > p {
+            background-color: #d7c5c5;
         }
 
         /*contact*/
-        main>section>section:nth-child(6)>h1{
-            display: block;
-            position: relative;
-            top: 30px;
-            left: 50%;
-            margin: auto;
+        main>section>section:nth-child(6)>div{
+            background-color: #d7c5c5;
+            position: absolute;
+            height: 65px;
+            top: 400px;
+            width: 100%;
         }
-        main>section>section:nth-child(6)>section{
-            position: relative;
-            top: 50px;
+        main > section > section:nth-child(6) > div>h1 {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 0;
+            margin: auto;
+            font-size: 60px;
+        }
+
+        main > section > section:nth-child(6) > section {
+            position: absolute;
+            margin: auto;
+            top: 510px;
+            bottom: 0;
+            right: 700px;
+            /*left: 0;*/
             left: 50px;
             display: inline-block;
+            font-size: 30px;
 
         }
-        #callImg{
-            width: 50px;
-            right:-55%;
-            top: -110px;
-            position: relative;
-            margin: auto;
-        }
-        #placeImg{
-            width: 50px;
-            right:-55%;
-            top: -110px;
-            position: relative;
-            margin: auto;
-        }
-        #emailImg{
-            width: 50px;
-            right:-55%;
-            top: -110px;
-            position: relative;
-            margin: auto;
-        }
-        main>section>section:nth-child(6)>li{
-            background-color: red;
-        }
-        #telephonePre{
-            width: 50px;
-            right: -20%;
-            top: -110px;
-            position: relative;
-            margin: auto;
-        }
-        #locationPre{
-            width: 50px;
-            right: -20%;
-            top: -110px;
-            position: relative;
-            margin: auto;
-        }
-        #emailPre{
-            width: 50px;
-            right: -20%;
-            top: -110px;
-            position: relative;
-            margin: auto;
-        }
-        /*footer*/
-        body>footer{
-            /*background-color: red;*/
-            /*top: 0;*/
+
+        #callImg {
+            /*width: 50px;*/
             /*right: 0;*/
-            /*bottom: 0;*/
-            /*left: 0;*/
-            /*margin: auto;*/
-            /*position: absolute;*/
+            /*top: 0;*/
+            /*position: relative;*/
+            /*margin: auto;
+            */
+            width: 80px;
+            right: 28%;
+            top: 60%;
+            position: absolute;
+            margin: auto;
+        }
+
+        #placeImg {
+            width: 80px;
+            right: 28%;
+            top: 82%;
+            position: absolute;
+            margin: auto;
+        }
+
+        #emailImg {
+            width: 80px;
+            right: 27%;
+            top: 112%;
+            position: absolute;
+            margin: auto;
+        }
+
+        main > section > section:nth-child(6) > li {
+            background-color: #d7c5c5;
+        }
+
+        #telephonePre {
+            /*width: 50px;*/
+            width: 0%;
+            right: 116px;
+            top: 601px;
+            /*left: 31%;*/
+            position: relative;
+            margin: auto;
+            font-size: 40px;
+            color: #e8e1e1;
+        }
+
+        #locationPre {
+            width: 0%;
+            right: 115px;
+            top: 362px;
+            position: relative;
+            margin: auto;
+            font-size: 40px;
+            color: #e8e1e1;
+        }
+
+        #emailPre {
+            width: 0%;
+            right: 195px;
+            top: 324px;
+            position: relative;
+            margin: auto;
+            font-size: 40px;
+            color: #e8e1e1;
+        }
+
+        #locationId {
+            width: 30%;
+            position: absolute;
+            left: 407px;
+            top: 206px;
+        }
+
+        #addressId {
+            width: 0;
+            position: relative;
+            top: 74px;
+            right: 170px;
+        }
+
+        #emailId {
+            width: 0;
+            position: absolute;
+            top: -51px;
+            right: -554px;
+        }
+
+        /*footer*/
+        body > footer {
+            background-color: #656060;
+            height: 60px;
+            /*    right: 0;*/
+                bottom: -386px;
+            /*    left: 0;*/
+                margin: auto;
+                position: absolute;
+            width: 100%;
+        }
+
+        body > footer > p {
+            margin-top: 0;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        #backgroundImg {
+            width: 100%;
+        }
+
+        main > section > section > figure > nav {
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            margin: auto;
+
+            padding: 10px;
+        }
+
+        #hello {
+            color: white;
+            font-size: 20px;
+        }
+
+        #disc {
+            color: white;
+            font-size: 20px;
+        }
+
+        #discSkill {
+            color: white;
+            position: absolute;
+            left: 275px;
+            top: 58px;
+            font-size: 15px;
+
+        }
+
+        figcaption {
+            align-self: flex-end;
         }
 
     </style>
@@ -327,7 +557,7 @@
 <main>
     <section>
         <section>
-            <img alt="image" src="assets/images/background_home.jpeg">
+            <img alt="image" id="backgroundImg" src="assets/images/background_home.jpeg">
             <figure>
                 <nav>
                     <!-- image -->
@@ -346,11 +576,11 @@
 
                     <!--                    <h1>Home</h1>-->
                     <pre>
-                        <b>Hello'
+                        <b id="hello">Hello'
                             I'm Kavindu Mihiranga</b>
-                                Programmer,Designer & Developer
+                                <p id="discSkill"> Programmer,Designer & Developer</p>
                     </pre>
-                    <pre>
+                    <pre id="disc">
                         I am Kavindu Mihiranga In SriLanka. I am currently Learning
                         about Software development In <abbr
                             title="Institute of Software Engineering (Panadura)">IJSE</abbr>.I currently compleating
@@ -362,9 +592,10 @@
 
         </section>
         <section>
-            <h1>
+            <div><h1>
                 About
-            </h1>
+            </h1></div>
+
             <article>
                 <pre>
                 Name      : B.A. Kavindu Mihiranga Dias
@@ -379,76 +610,94 @@
                 </pre>
             </article>
             <!-- image -->
-            <img id="profilePic" alt="profile picture" src="assets/images/prf.png">
+            <img alt="profile picture" id="profilePic" src="assets/images/prf.png">
 
         </section>
         <section>
+            <div><h1>Skill</h1></div>
 
-            <h1>Skill</h1>
 
             <section>
                 <!-- image -->
-                <img id="javaImg" alt="java icon" src="assets/images/java.png">
+                <img alt="java icon" id="javaImg" src="assets/images/java.png">
                 <figcaption>JAVA</figcaption>
                 <!-- image -->
-                <img id="htmlImg" alt="html icon" src="assets/images/html.png">
+                <img alt="html icon" id="htmlImg" src="assets/images/html.png">
                 <figcaption>HTML</figcaption>
                 <!-- image -->
-                <img id="mysqlImg" alt="mysql icon" src="assets/images/mysql.png">
+                <img alt="mysql icon" id="mysqlImg" src="assets/images/mysql.png">
                 <figcaption>MYSQL</figcaption>
                 <!-- image -->
-                <img id="JsImg" alt="javascript icon" src="assets/images/js.png">
+                <img alt="javascript icon" id="JsImg" src="assets/images/js.png">
                 <figcaption>JACASCRIPT</figcaption>
                 <!-- image -->
-                <img id="cssImg" alt="css" src="assets/images/css.png">
+                <img alt="css" id="cssImg" src="assets/images/css.png">
                 <figcaption>CSS</figcaption>
                 <!-- image -->
-                <img id="illustraterImg" alt="illustrator icon" src="assets/images/ilustraterr.png">
+                <img alt="illustrator icon" id="illustraterImg" src="assets/images/ilustraterr.png">
                 <figcaption>ILLUSTRATOR</figcaption>
-                <img id="photoshopImg" alt="photoshop icon" src="assets/images/photoshop.png">
+                <img alt="photoshop icon" id="photoshopImg" src="assets/images/photoshop.png">
                 <figcaption>PHOTOSHOP</figcaption>
 
             </section>
 
         </section>
         <section>
-            <h1>Project</h1>
+            <div> <h1>Project</h1></div>
+
 
             <section>
                 <!-- image -->
-                <img id="superWholesaleImg" alt="super_wholesale image" src="assets/images/super_wholesale.jfif">
+                <img alt="super_wholesale image" id="superWholesaleImg" src="assets/images/super_wholesale.jfif">
                 <figcaption>Super Wholesale</figcaption>
                 <!-- image -->
-                <img id="medicalCenterImg" alt="medical center image" height="150" src="assets/images/medical_center.jfif">
+                <img alt="medical center image" height="150" id="medicalCenterImg"
+                     src="assets/images/medical_center.jfif">
                 <figcaption>Medical Center</figcaption>
                 <!-- image -->
-                <img id="vehicleParkingImg" alt="vehicle parking image" src="assets/images/vehical_parking.jpg">
+                <img alt="vehicle parking image" id="vehicleParkingImg" src="assets/images/vehical_parking.jpg">
                 <figcaption>Vehicle Parking</figcaption>
                 <!-- image -->
-                <img id="hotelImg" alt="hotel_system image" src="assets/images/hotel_img.jpg">
+                <img alt="hotel_system image" id="hotelImg" src="assets/images/hotel_img.jpg">
                 <figcaption>Blue Ocean Hotel</figcaption>
                 <!-- image -->
             </section>
 
 
-
         </section>
         <section>
-            <h1>Education</h1>
+            <div> <h1>Education</h1> </div>
+
+            <div>
+                <!-- image -->
+                <img alt="ijse icon" id="ijseImg" src="assets/images/ijse.png">
+                <p>
+                    IJSE <abbr title="Graduate Diploma Software Engineering">GDSE</abbr>
+                </p>
+            </div>
+            <!--            <h1>Education</h1>-->
             <!-- image -->
-            <img id="ijseImg" alt="ijse icon" src="assets/images/ijse.png">
-            <p>
-                IJSE <abbr title="Graduate Diploma Software Engineering">GDSE</abbr>
-            </p>
+            <!--            <img id="ijseImg" alt="ijse icon" src="assets/images/ijse.png">-->
+            <!--            <p>-->
+            <!--                IJSE <abbr title="Graduate Diploma Software Engineering">GDSE</abbr>-->
+            <!--            </p>-->
             <!-- image -->
-            <img id="schoolImg" alt="school_image" src="assets/images/school_image.png">
-            <pre>
+            <div>
+                <img alt="school_image" id="schoolImg" src="assets/images/school_image.png">
+                <pre>
                 My primary and higher education in Mihindu Central College Agalawatta
                 2005-2018
             </pre>
+            </div>
+            <!--            <img id="schoolImg" alt="school_image" src="assets/images/school_image.png">-->
+            <!--            <pre>-->
+            <!--                My primary and higher education in Mihindu Central College Agalawatta-->
+            <!--                2005-2018-->
+            <!--            </pre>-->
         </section>
         <section>
-            <h1>Contact</h1>
+            <div> <h1>Contact</h1></div>
+
             <section>
 
                 <form action="">
@@ -477,9 +726,9 @@
             </section>
             <list>
                 <!-- image -->
-                <img id="callImg" alt="call image" src="assets/images/phone-call.png">
+                <img alt="call image" id="callImg" src="assets/images/phone-call.png">
                 <pre id="telephonePre">
-               HOTLINE
+                    HOTLINE
                 <a 0783688031 href="tell:+94783688031"><abbr title="Click to Call">0783688031</abbr></a>
                 <a 0765453914 href="tell:+94765453914"><abbr title="Click to Call">0765453914</abbr></a>
                 </pre>
@@ -487,17 +736,23 @@
             <br>
             <list>
                 <!-- image -->
-                <img id="placeImg" alt="place image" src="assets/images/placeholder.png">
+                <img alt="place image" id="placeImg" src="assets/images/placeholder.png">
                 <pre id="locationPre">
-                LOCATION
+<!--                LOCATION-->
+                    <p id="locationId"> LOCATION</p>
+                    <p id="addressId">
+                        Polwatta,
+                        Kekulandala,
+                        Agalawatta.
+                    </p>
                 </pre>
             </list>
             <br>
             <list>
                 <!-- image -->
-                <img id="emailImg" alt="email image" src="assets/images/gmail.png">
+                <img alt="email image" id="emailImg" src="assets/images/gmail.png">
                 <pre id="emailPre">
-                EMAIL
+                <p id="emailId">EMAIL</p>
                 <a href="mail:mihirangak1999@gmail.com" mihirangak1999@gmail.com><abbr title="Click to send Mail">mihirangak1999@gmail.com</abbr></a>
 
                 </pre>
@@ -508,10 +763,10 @@
     </section>
 </main>
 <footer>
-    <small>
+    <p><small>
         copyright &#169 all right recieved
         Website powered by Kavindu Mihiranga
-    </small>
+    </small></p>
 </footer>
 </body>
 </html>
