@@ -12,6 +12,47 @@
 
 
     <style>
+
+        @media all and (min-width: 320px)and (max-width: 425px) {
+            /*header*/
+            body > header {
+                height: 100px;
+                background-color: green;
+            }
+
+            /*logo*/
+            body > header > img {
+                width: 5vh;
+            }
+
+            /*list*/
+            body > header > ul {
+                height: 40px;
+                right: 0;
+            }
+
+            main > section > section > figure {
+                top: 0;
+                left: 0;
+                margin: auto;
+            }
+
+            main > section > section:nth-child(2) > div {
+                position: absolute;
+                top: 0;
+                width: 10%;
+                left: 50%;
+
+            }
+
+            /*contact feildSet*/
+            main > section > section:nth-child(6) > section {
+                font-size: 10px;
+            }
+
+
+        }
+
         /*!*!*background image*!*!*/
         body {
             background-image: url("assets/images/background_home.jpeg");
@@ -37,8 +78,28 @@
             display: inline;
             transform: rotate(-3grad);
             position: absolute;
-        }
 
+            animation-name: logoAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-duration: 1s;
+            
+
+        }
+        @keyframes logoAnimation {
+            0% {
+
+                transform: rotate(360rad);
+            }
+
+            /*50% {*/
+            /*    transform: rotate(180rad);*/
+            /*}*/
+            /*100% {*/
+            /*    transform: rotate(360rad);*/
+            /*}*/
+
+        }
         header {
             position: relative;
             height: 80px;
@@ -82,7 +143,15 @@
             /*margin-right: auto;*/
             /*width: 50%;*/
 
+
         }
+        #backgroundImg {
+            width: 100%;
+            /*-webkit-filter: grayscale(100%);*/
+            filter: grayscale(50%);
+            /*filter: blur(0.5);*/
+        }
+
 
         /*other nav image*/
         main > section > section > figure > nav {
@@ -95,7 +164,7 @@
 
         /*background color*/
         main {
-            background-color: #6a6464;
+            background-color: #000000d4;
         }
 
         main > section > section > figure {
@@ -111,15 +180,113 @@
             height: 65px;
             background-color: #d7c5c5;
             top: -4px;
+            animation-name: aboutDivAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+        @keyframes aboutDivAnimation {
+            0% {
+                background-color: #343d8b;
+            }
+            10% {
+                background-color: #46ad51;
+
+            }
+            20% {
+                background-color: #96409e;
+
+            }
+            30% {
+                background-color: #c4af44;
+
+            }
+            40% {
+                background-color: #2eaf9b;
+
+            }
+            50% {
+                background-color: #e3db27;
+
+            }
+            60% {
+                background-color: #d92323;
+
+            }
+            70% {
+                background-color: #1d2a7f;
+
+            }
+            80% {
+                background-color: #dc267b;
+
+            }
+            90% {
+                background-color: #31a04d;
+
+            }
+            100% {
+                background-color: #ea8814;
+            }
         }
 
         main > section > section:nth-child(2) > div > h1 {
             position: absolute;
             top: -83%;
-            width: 50%;
+            /*width: 50%;*/
             left: 50%;
             display: block;
             font-size: 60px;
+            animation-name: aboutH1Animation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+        }
+
+        @keyframes aboutH1Animation {
+            0% {
+                color: #343d8b;
+            }
+            10% {
+                color: #46ad51;
+                left: 10%;
+            }
+            20% {
+                color: #96409e;
+                left: 15%;
+            }
+            30% {
+                color: #c4af44;
+                left: 20%;
+            }
+            40% {
+                color: #2eaf9b;
+                left: 30%;
+            }
+            50% {
+                color: #e3db27;
+                left: 40%;
+            }
+            60% {
+                color: #d92323;
+                left: 50%;
+            }
+            70% {
+                color: #1d2a7f;
+                left: 60%;
+            }
+            80% {
+                color: #dc267b;
+                left: 70%;
+            }
+            90% {
+                color: #31a04d;
+                left: 80%;
+            }
+            100% {
+                color: #ea8814;
+            }
         }
 
 
@@ -133,6 +300,7 @@
             font-size: x-large;
             margin: auto;
             margin-top: 5%;
+            color: #ffffffb0;
 
 
         }
@@ -166,6 +334,42 @@
             display: inline;
             position: absolute;
 
+            animation-name: profilePicAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-duration: 1s;
+            animation-delay: 10s;
+
+            filter: brightness(0.5);
+
+        }
+        @keyframes profilePicAnimation {
+            0% {
+
+               transform: rotate(180rad);
+            }
+
+            /*50% {*/
+            /*    transform: rotate(180rad);*/
+            /*}*/
+            /*100% {*/
+            /*    transform: rotate(270rad);*/
+            /*}*/
+
+        }
+
+        /*phoneNo*/
+        body>main>section>section:nth-child(2)>article>pre>a{
+            color: rgba(201, 184, 184, 0.8);
+            text-decoration: none;
+        }
+        body>main>section>section:nth-child(2)>article>pre>a:nth-child(4){
+            position: relative;
+            top: 50px;
+            color: #ebe1db;
+            background-color: #0882f694;
+            filter: drop-shadow(2px 8px 6px black);
+
         }
 
         skill
@@ -173,25 +377,127 @@
             height: 400px;
             position: relative;
         }
-        body > main > section > section:nth-child(3) > div{
+
+        body > main > section > section:nth-child(3) > div {
             background-color: #d7c5c5;
             position: absolute;
             height: 65px;
             top: -61%;
             width: 100%;
+            animation-name: skillDivAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+
         }
-        body > main > section > section:nth-child(3) > div>h1 {
+
+        @keyframes skillDivAnimation {
+            0% {
+                background-color: #343d8b;
+            }
+            10% {
+                background-color: #46ad51;
+
+            }
+            20% {
+                background-color: #96409e;
+
+            }
+            30% {
+                background-color: #c4af44;
+
+            }
+            40% {
+                background-color: #2eaf9b;
+
+            }
+            50% {
+                background-color: #e3db27;
+
+            }
+            60% {
+                background-color: #d92323;
+
+            }
+            70% {
+                background-color: #1d2a7f;
+
+            }
+            80% {
+                background-color: #dc267b;
+
+            }
+            90% {
+                background-color: #31a04d;
+
+            }
+            100% {
+                background-color: #ea8814;
+            }
+        }
+
+        body > main > section > section:nth-child(3) > div > h1 {
             display: block;
             /*position: relative;*/
             position: absolute;
             /*top: 25em;*/
             top: -5px;
-            /*left: 0;*/
-            left: 50%;
-            right: 0;
+            left: 0;
+            /*left: 50%;*/
+            /*right: 0;*/
             margin: auto;
             z-index: 10;
             font-size: 60px;
+            animation-name: skillH1Animation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+
+        }
+
+        @keyframes skillH1Animation {
+            0% {
+                color: #343d8b;
+            }
+            10% {
+                color: #46ad51;
+                left: 10%;
+            }
+            20% {
+                color: #96409e;
+                left: 20%;
+            }
+            30% {
+                color: #c4af44;
+                left: 30%;
+            }
+            40% {
+                color: #2eaf9b;
+                left: 40%;
+            }
+            50% {
+                color: #e3db27;
+                left: 50%;
+            }
+            60% {
+                color: #d92323;
+                left: 60%;
+            }
+            70% {
+                color: #1d2a7f;
+                left: 70%;
+            }
+            80% {
+                color: #dc267b;
+                left: 80%;
+            }
+            90% {
+                color: #31a04d;
+                left: 90%;
+            }
+            100% {
+                color: #ea8814;
+            }
         }
 
         body > main > section > section:nth-child(3) > section {
@@ -206,61 +512,187 @@
         #javaImg {
             width: 200px;
             display: inline;
+            filter: grayscale(100%);
+            /*filter: brightness(1.5);*/
+            filter: drop-shadow(30px 4px 6px #2c3e50);
+            position: relative;
 
         }
 
         #htmlImg {
-            width: 200px;
+            position: relative;
+            width: 150px;
             display: inline;
+            filter: drop-shadow(30px 4px 6px #2c3e50);
         }
 
         #mysqlImg {
-            width: 200px;
+            position: relative;
+            width: 150px;
+            display: inline;
+            filter: drop-shadow(30px 4px 6px #2c3e50);
         }
 
         #JsImg {
-            width: 200px;
+            position: relative;
+            width: 150px;
+            display: inline;
+            filter: drop-shadow(30px 4px 6px #2c3e50);
         }
 
         #cssImg {
-            width: 200px;
+            position: relative;
+            width: 150px;
+            display: inline;
+            filter: drop-shadow(30px 4px 6px #2c3e50);
         }
 
         #illustraterImg {
-            width: 200px;
-        }
+            position: relative;
+            width: 150px;
+            display: inline;
+            filter: drop-shadow(30px 4px 6px #2c3e50);        }
 
         #photoshopImg {
-            width: 200px;
-        }
+            position: relative;
+            width: 150px;
+            display: inline;
+            filter: drop-shadow(30px 4px 6px #2c3e50);        }
 
 
         /*project*/
-        main>section>section:nth-child(4)>div{
+        main > section > section:nth-child(4) > div {
             background-color: #d7c5c5;
             position: absolute;
             height: 65px;
             top: 0;
             width: 100%;
+
+            animation-name: projectDivAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+
         }
+
+        @keyframes projectDivAnimation {
+            0% {
+                background-color: #343d8b;
+            }
+            10% {
+                background-color: #46ad51;
+
+            }
+            20% {
+                background-color: #96409e;
+
+            }
+            30% {
+                background-color: #c4af44;
+
+            }
+            40% {
+                background-color: #2eaf9b;
+
+            }
+            50% {
+                background-color: #e3db27;
+
+            }
+            60% {
+                background-color: #d92323;
+
+            }
+            70% {
+                background-color: #1d2a7f;
+
+            }
+            80% {
+                background-color: #dc267b;
+
+            }
+            90% {
+                background-color: #31a04d;
+
+            }
+            100% {
+                background-color: #ea8814;
+            }
+        }
+
 
         body > main > section > section:nth-child(4) {
             height: 400px;
             position: relative;
+
         }
 
-        main > section > section:nth-child(4) > div>h1 {
+
+        main > section > section:nth-child(4) > div > h1 {
             display: block;
             /*position: relative;*/
             position: absolute;
             /*top: 30px;*/
             top: -10px;
             /*left: 0;*/
-            left: 50%;
-            right: 0;
+            /*left: 50%;*/
+            /*right: 0;*/
+            left: 0;
             margin: auto;
             font-size: 60px;
+
+            animation-name: projectH1Animation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+
         }
+
+        @keyframes projectH1Animation {
+            0% {
+                color: #343d8b;
+            }
+            10% {
+                color: #46ad51;
+                left: 10%;
+            }
+            20% {
+                color: #96409e;
+                left: 15%;
+            }
+            30% {
+                color: #c4af44;
+                left: 20%;
+            }
+            40% {
+                color: #2eaf9b;
+                left: 30%;
+            }
+            50% {
+                color: #e3db27;
+                left: 40%;
+            }
+            60% {
+                color: #d92323;
+                left: 50%;
+            }
+            70% {
+                color: #1d2a7f;
+                left: 60%;
+            }
+            80% {
+                color: #dc267b;
+                left: 70%;
+            }
+            90% {
+                color: #31a04d;
+                left: 80%;
+            }
+            100% {
+                color: #ea8814;
+            }
+        }
+
 
         body > main > section > section:nth-child(4) > section {
             position: relative;
@@ -272,43 +704,156 @@
 
         #superWholesaleImg {
             width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
         }
 
         #medicalCenterImg {
             width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
         }
 
         #vehicleParkingImg {
             width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
         }
 
         #hotelImg {
             width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
         }
 
         /*education*/
         main > section > section:nth-child(5) {
             height: 300px;
         }
-        main>section>section:nth-child(5)>div{
+
+        main > section > section:nth-child(5) > div {
             background-color: #d7c5c5;
             position: absolute;
             height: 65px;
             top: 157px;
             width: 100%;
+
+
         }
-        main > section > section:nth-child(5) > div>h1 {
+
+        main > section > section:nth-child(5) > div:nth-child(1) {
+            animation-name: educationDivAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+
+
+        }
+
+        @keyframes educationDivAnimation {
+            0% {
+                background-color: #343d8b;
+            }
+            10% {
+                background-color: #46ad51;
+
+            }
+            20% {
+                background-color: #96409e;
+
+            }
+            30% {
+                background-color: #c4af44;
+
+            }
+            40% {
+                background-color: #2eaf9b;
+
+            }
+            50% {
+                background-color: #e3db27;
+
+            }
+            60% {
+                background-color: #d92323;
+
+            }
+            70% {
+                background-color: #1d2a7f;
+
+            }
+            80% {
+                background-color: #dc267b;
+
+            }
+            90% {
+                background-color: #31a04d;
+
+            }
+            100% {
+                background-color: #ea8814;
+            }
+        }
+
+        main > section > section:nth-child(5) > div > h1 {
             display: block;
             /*position: relative;*/
             position: absolute;
             /*top: 30px;*/
-            /*left: 0;*/
-            left: 50%;
-            right: 0;
+            left: 0;
+            /*left: 50%;*/
+            /*right: 0;*/
             margin: auto;
             font-size: 60px;
 
+            animation-name: educationH1Animation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+
         }
+
+        @keyframes educationH1Animation {
+            0% {
+                color: #343d8b;
+            }
+            10% {
+                color: #46ad51;
+                left: 10%;
+            }
+            20% {
+                color: #96409e;
+                left: 15%;
+            }
+            30% {
+                color: #c4af44;
+                left: 20%;
+            }
+            40% {
+                color: #2eaf9b;
+                left: 30%;
+            }
+            50% {
+                color: #e3db27;
+                left: 40%;
+            }
+            60% {
+                color: #d92323;
+                left: 50%;
+            }
+            70% {
+                color: #1d2a7f;
+                left: 60%;
+            }
+            80% {
+                color: #dc267b;
+                left: 70%;
+            }
+            90% {
+                color: #31a04d;
+                left: 80%;
+            }
+            100% {
+                color: #ea8814;
+            }
+        }
+
 
         main > section > section:nth-child(5) > div:nth-child(2) {
             position: relative;
@@ -322,6 +867,8 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+
+
         }
 
         main > section > section:nth-child(5) > div:nth-child(3) {
@@ -362,21 +909,124 @@
         }
 
         /*contact*/
-        main>section>section:nth-child(6)>div{
+        main > section > section:nth-child(6) > div {
             background-color: #d7c5c5;
             position: absolute;
             height: 65px;
             top: 400px;
             width: 100%;
+            animation-name: contactDivAnimation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+
         }
-        main > section > section:nth-child(6) > div>h1 {
+
+        @keyframes contactDivAnimation {
+            0% {
+                background-color: #343d8b;
+            }
+            10% {
+                background-color: #46ad51;
+
+            }
+            20% {
+                background-color: #96409e;
+
+            }
+            30% {
+                background-color: #c4af44;
+
+            }
+            40% {
+                background-color: #2eaf9b;
+
+            }
+            50% {
+                background-color: #e3db27;
+
+            }
+            60% {
+                background-color: #d92323;
+
+            }
+            70% {
+                background-color: #1d2a7f;
+
+            }
+            80% {
+                background-color: #dc267b;
+
+            }
+            90% {
+                background-color: #31a04d;
+
+            }
+            100% {
+                background-color: #ea8814;
+            }
+        }
+
+        main > section > section:nth-child(6) > div > h1 {
             display: block;
             position: absolute;
             top: 0;
-            left: 50%;
-            right: 0;
+            /*left: 50%;*/
+            /*right: 0;*/
+            left: 0;
             margin: auto;
             font-size: 60px;
+
+            animation-name: educationH1Animation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+
+        }
+
+        @keyframes educationH1Animation {
+            0% {
+                color: #343d8b;
+            }
+            10% {
+                color: #46ad51;
+                left: 10%;
+            }
+            20% {
+                color: #96409e;
+                left: 15%;
+            }
+            30% {
+                color: #c4af44;
+                left: 20%;
+            }
+            40% {
+                color: #2eaf9b;
+                left: 30%;
+            }
+            50% {
+                color: #e3db27;
+                left: 40%;
+            }
+            60% {
+                color: #d92323;
+                left: 50%;
+            }
+            70% {
+                color: #1d2a7f;
+                left: 60%;
+            }
+            80% {
+                color: #dc267b;
+                left: 70%;
+            }
+            90% {
+                color: #31a04d;
+                left: 80%;
+            }
+            100% {
+                color: #ea8814;
+            }
         }
 
         main > section > section:nth-child(6) > section {
@@ -484,10 +1134,10 @@
             background-color: #656060;
             height: 60px;
             /*    right: 0;*/
-                bottom: -386px;
+            bottom: -386px;
             /*    left: 0;*/
-                margin: auto;
-                position: absolute;
+            margin: auto;
+            position: absolute;
             width: 100%;
         }
 
@@ -499,9 +1149,6 @@
             font-weight: bold;
         }
 
-        #backgroundImg {
-            width: 100%;
-        }
 
         main > section > section > figure > nav {
             display: flex;
@@ -533,8 +1180,56 @@
 
         figcaption {
             align-self: flex-end;
+            font-size: 10px;
+            color: wheat;
+            padding-inline-end: 15px;
         }
+        /*#javaFig{*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*}*/
+        /*#htmlFig{*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*}*/
+        /*#mysqlFig{*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*}*/
+        /*#javaScriptFig{*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*}*/
+        /*#cssFig{*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*}*/
+        /*#illustraterFig{*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*}*/
+        /*#photoshopFig{*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*}*/
 
+        #contactForm{
+            background-color: black;
+        }
     </style>
 </head>
 
@@ -604,7 +1299,7 @@
                             Agalawatta.
                 Birthday  : <time datetime="1999-03-09">1999-03-09</time>
                 School    : Mihindu Central College
-                Phone No  : <a 0783688031 href="tell:+94783688031"><abbr title="Click to Call">+94765453914</abbr></a>
+                Phone No  : <a 0783688031 href="tell:+94783688031" ><abbr title="Click to Call">+94765453914</abbr></a>
                 Phone No  : <a 0765453914 href="tell:+94765453914"><abbr title="Click to Call">+94765453914</abbr></a>
                     <a download="assets/CV" href="assets/CV">Download CV</a>
                 </pre>
@@ -620,30 +1315,30 @@
             <section>
                 <!-- image -->
                 <img alt="java icon" id="javaImg" src="assets/images/java.png">
-                <figcaption>JAVA</figcaption>
+                <figcaption id="javaFig">JAVA</figcaption>
                 <!-- image -->
                 <img alt="html icon" id="htmlImg" src="assets/images/html.png">
-                <figcaption>HTML</figcaption>
+                <figcaption id="htmlFig">HTML</figcaption>
                 <!-- image -->
                 <img alt="mysql icon" id="mysqlImg" src="assets/images/mysql.png">
-                <figcaption>MYSQL</figcaption>
+                <figcaption id="mysqlFig">MYSQL</figcaption>
                 <!-- image -->
                 <img alt="javascript icon" id="JsImg" src="assets/images/js.png">
-                <figcaption>JACASCRIPT</figcaption>
+                <figcaption id="javaScriptFig">JACASCRIPT</figcaption>
                 <!-- image -->
                 <img alt="css" id="cssImg" src="assets/images/css.png">
-                <figcaption>CSS</figcaption>
+                <figcaption id="cssFig">CSS</figcaption>
                 <!-- image -->
                 <img alt="illustrator icon" id="illustraterImg" src="assets/images/ilustraterr.png">
-                <figcaption>ILLUSTRATOR</figcaption>
+                <figcaption id="illustraterFig">ILLUSTRATOR</figcaption>
                 <img alt="photoshop icon" id="photoshopImg" src="assets/images/photoshop.png">
-                <figcaption>PHOTOSHOP</figcaption>
+                <figcaption id="photoshopFig">PHOTOSHOP</figcaption>
 
             </section>
 
         </section>
         <section>
-            <div> <h1>Project</h1></div>
+            <div><h1>Project</h1></div>
 
 
             <section>
@@ -666,7 +1361,7 @@
 
         </section>
         <section>
-            <div> <h1>Education</h1> </div>
+            <div><h1>Education</h1></div>
 
             <div>
                 <!-- image -->
@@ -695,8 +1390,9 @@
             <!--                2005-2018-->
             <!--            </pre>-->
         </section>
+
         <section>
-            <div> <h1>Contact</h1></div>
+            <div><h1>Contact</h1></div>
 
             <section>
 
