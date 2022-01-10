@@ -166,27 +166,27 @@
             filter: brightness(0.5)
         }
 
-        main > section > section > figure > nav>img:nth-child(1) {
-                margin-top: 20px;
-                width: 5vw;
-        }
-
-        main > section > section > figure > nav>img:nth-child(2) {
+        main > section > section > figure > nav > img:nth-child(1) {
             margin-top: 20px;
             width: 5vw;
         }
 
-        main > section > section > figure > nav>img:nth-child(3) {
+        main > section > section > figure > nav > img:nth-child(2) {
             margin-top: 20px;
             width: 5vw;
         }
 
-        main > section > section > figure > nav>img:nth-child(4) {
+        main > section > section > figure > nav > img:nth-child(3) {
             margin-top: 20px;
             width: 5vw;
         }
 
-        main > section > section > figure > nav>img:nth-child(5) {
+        main > section > section > figure > nav > img:nth-child(4) {
+            margin-top: 20px;
+            width: 5vw;
+        }
+
+        main > section > section > figure > nav > img:nth-child(5) {
             margin-top: 20px;
             width: 5vw;
         }
@@ -738,21 +738,176 @@
         #superWholesaleImg {
             width: 200px;
             filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+        }
+
+        #superWholesaleImg:hover {
+            cursor: pointer;
         }
 
         #medicalCenterImg {
             width: 200px;
             filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+        }
+
+        #medicalCenterImg:hover {
+            cursor: pointer;
         }
 
         #vehicleParkingImg {
             width: 200px;
             filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+        }
+
+        #vehicleParkingImg:hover {
+            cursor: pointer;
         }
 
         #hotelImg {
             width: 200px;
             filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+        }
+
+        #hotelImg:hover {
+            cursor: pointer;
+        }
+
+        #LCase1 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+            height: 150px;
+        }
+
+        #LCase1:hover {
+            cursor: pointer;
+
+        }
+
+        #LCase2 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+            height: 150px;
+        }
+
+        #LCase2:hover {
+            cursor: pointer;
+        }
+
+        #LCase3 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+            left: 1%;
+            height: 150px;
+        }
+
+        #LCase3:hover {
+            cursor: pointer;
+        }
+
+        #LCase4 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+            left: 1%;
+            height: 150px;
+        }
+
+        #LCase4:hover {
+            cursor: pointer;
+        }
+
+        #TCase1 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+            left: 2%;
+            height: 150px;
+        }
+
+        #TCase1:hover {
+            cursor: pointer;
+        }
+
+        #TCase2 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+            left: 2%;
+            height: 150px;
+        }
+
+        #TCase2:hover {
+            cursor: pointer;
+        }
+
+        #ACase1 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding-right: 20px;
+            padding-left: 0;
+            padding-top: 10px;
+            height: 150px;
+        }
+
+        #ACase1:hover {
+            cursor: pointer;
+        }
+
+        #ACase2 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding-left: 0px;
+            padding-top: 10px;
+            /*left: 1%;*/
+            height: 150px;
+        }
+
+        #ACase2:hover {
+            cursor: pointer;
+        }
+
+        #ACase3 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding: 10px;
+            padding-left: 0px;
+            height: 150px;
+        }
+
+        #ACase3:hover {
+            cursor: pointer;
+        }
+
+        #ACase4 {
+            width: 200px;
+            filter: drop-shadow(10px 4px 6px #020100);
+            position: relative;
+            padding-left: 0px;
+            padding-top: 10px;
+            height: 150px;
+        }
+
+        #ACase4:hover {
+            cursor: pointer;
         }
 
         /*education*/
@@ -1377,20 +1532,70 @@
 
             <section>
                 <!-- image -->
-                <img alt="super_wholesale image" id="superWholesaleImg" src="assets/images/super_wholesale.jfif">
-                <figcaption>Super Wholesale</figcaption>
-                <!-- image -->
-                <img alt="medical center image" height="150" id="medicalCenterImg"
-                     src="assets/images/medical_center.jfif">
-                <figcaption>Medical Center</figcaption>
-                <!-- image -->
-                <img alt="vehicle parking image" id="vehicleParkingImg" src="assets/images/vehical_parking.jpg">
-                <figcaption>Vehicle Parking</figcaption>
-                <!-- image -->
-                <img alt="hotel_system image" id="hotelImg" src="assets/images/hotel_img.jpg">
-                <figcaption>Blue Ocean Hotel</figcaption>
+<!--                <img alt="super_wholesale image" id="superWholesaleImg" src="assets/images/super_wholesale.jfif">-->
+<!--                <figcaption>Super Wholesale</figcaption>-->
+<!--                &lt;!&ndash; image &ndash;&gt;-->
+<!--                <img alt="medical center image" height="150" id="medicalCenterImg"-->
+<!--                     src="assets/images/medical_center.jfif">-->
+<!--                <figcaption>Medical Center</figcaption>-->
+<!--                &lt;!&ndash; image &ndash;&gt;-->
+<!--                <img alt="vehicle parking image" id="vehicleParkingImg" src="assets/images/vehical_parking.jpg">-->
+<!--                <figcaption>Vehicle Parking</figcaption>-->
+<!--                &lt;!&ndash; image &ndash;&gt;-->
+<!--                <img alt="hotel_system image" id="hotelImg" src="assets/images/hotel_img.jpg">-->
+<!--                <figcaption>Blue Ocean Hotel</figcaption>-->
+<!--                &lt;!&ndash; image &ndash;&gt;-->
+
+                <!--                Assignment-->
+                <!-- LCase1 -->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Layouts/Case1/LayoutsCase_01.html?_ijt=eqgo65enpdtbl15a2g6ekst3q6"><img
+                        alt="Layouts Case1 image" id="LCase1" src="assets/images/LCase1.PNG"></a>
+                <figcaption>Layouts Case1</figcaption>
                 <!-- image -->
 
+                <!-- LCase2 -->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Layouts/Case2/LayoutsCase_02.html?_ijt=l99u0qqp24drb4rjdfc9ql57dc"><img
+                        alt="Layouts Case2 image" id="LCase2" src="assets/images/LCase2.PNG"></a>
+                <figcaption>Layouts Case2</figcaption>
+
+                <!-- LCase3 -->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Layouts/Case3/LayoutsCase_03.html?_ijt=l99u0qqp24drb4rjdfc9ql57dc"><img
+                        alt="Layouts Case3 image" id="LCase3" src="assets/images/LCase3.PNG"></a>
+                <figcaption>Layouts Case3</figcaption>
+
+                <!-- LCase4 -->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Layouts/Case4/LayoutsCase_04.html?_ijt=l99u0qqp24drb4rjdfc9ql57dc"><img
+                        alt="Layouts Case4 image" id="LCase4" src="assets/images/LCase4.PNG"></a>
+                <figcaption>Layouts Case4</figcaption>
+
+                <!-- TCase1 -->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Transition/Case1/CssTransitionCase_01.html?_ijt=l99u0qqp24drb4rjdfc9ql57dc"><img
+                        alt="Transition Case1 image" id="TCase1" src="assets/images/TCase1.PNG"></a>
+                <figcaption>Transition Case1</figcaption>
+
+                <!-- TCase2 -->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Transition/Case2/CssTransitionCase_02.html?_ijt=l99u0qqp24drb4rjdfc9ql57dc"><img
+                        alt="Transition Case2 image" id="TCase2" src="assets/images/TCase2.PNG"></a>
+                <figcaption>Transition Case2</figcaption>
+
+                <!--                AnimationCase1-->
+                <!--                <iframe width="250" height="200" src="https://www.youtube.com/embed/XxBGmU2Ewa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <!--                ACase1-->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Animation/Case1/AnimationCase_01.html?_ijt=9590rnubbso6i6d65vm40h94kc"><img
+                        alt="Animation Case1" id="ACase1" src="assets/images/ACase1.PNG"></a>
+                <figcaption>Animation Case1</figcaption>
+                <!--                ACase2-->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Animation/Case2/AnimationCase_02.html?_ijt=9590rnubbso6i6d65vm40h94kc"><img
+                        alt="Animation Case2" id="ACase2" src="assets/images/ACase2.PNG"></a>
+                <figcaption>Animation Case2</figcaption>
+                <!--                ACase3-->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Animation/Case3/CssAnimationCase_03.html?_ijt=9590rnubbso6i6d65vm40h94kc"><img
+                        alt="Animation Case3" id="ACase3" src="assets/images/ACase3.PNG"></a>
+                <figcaption>Animation Case3</figcaption>
+                <!--                ACase4-->
+                <a href="http://localhost:63342/MyProfile/myProjects/css/Animation/Case4/CssAnimationCase_04.html?_ijt=9590rnubbso6i6d65vm40h94kc"><img
+                        alt="Animation Case4" id="ACase4" src="assets/images/ACase4.PNG"></a>
+                <figcaption>Animation Case4</figcaption>
 
             </section>
 
