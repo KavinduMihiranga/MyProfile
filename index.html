@@ -22,7 +22,11 @@
 
             /*logo*/
             body > header > img {
-                width: 5vh;
+                height: 0px;
+                /*-moz-user-select: none;*/
+                /*-khtml-user-select: none;*/
+                /*-webkit-user-select: none;*/
+                /*user-select: none;*/
             }
 
             /*list*/
@@ -30,7 +34,11 @@
                 height: 40px;
                 right: 0;
             }
-
+            /*image fb..*/
+            main > section > section > figure > nav {
+                top: -50px;
+                position: absolute;
+            }
             main > section > section > figure {
                 top: 0;
                 left: 0;
@@ -48,6 +56,10 @@
             /*contact feildSet*/
             main > section > section:nth-child(6) > section {
                 font-size: 10px;
+            }
+            main>section>section>figure{
+                top: 10px;
+                position: relative;
             }
 
 
@@ -129,7 +141,10 @@
             color: red;
             cursor: pointer;
         }
+         header > ul > li:active {
+            color: white;
 
+        }
 
         /*background image*/
         main > section > section > image {
