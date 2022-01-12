@@ -14,6 +14,9 @@
     <style>
 
         @media all and (min-width: 320px)and (max-width: 425px) {
+            main>section>section:nth-child(2)>div>h1{
+                top: 50%;
+            }
             /*header*/
             body > header {
                 height: 100px;
@@ -67,6 +70,11 @@
 
 
         }
+        @media all and (min-width: 768px)and (max-width: 1440px) {
+            header>ul{
+                font-size: 20px;
+            }
+        }
 
         /*!*!*background image*!*!*/
         body {
@@ -106,6 +114,7 @@
             0% {
 
                 transform: rotate(360rad);
+                
             }
 
             /*50% {*/
@@ -614,11 +623,13 @@
         #seeMoreSkill:hover {
             cursor: pointer;
         }
-        #seeMoreSkillP{
+
+        #seeMoreSkillP {
             color: red;
-            top: 550%;
+            top: 500%;
             left: 50%;
             position: absolute;
+            font-size: 25px;
         }
 
         /*project*/
@@ -938,19 +949,35 @@
             cursor: pointer;
         }
 
-        #seeMoreSec:hover {
-            /*width: 100px;*/
-            /*height: 50px;*/
-            /*background-color: rgba(56, 120, 184, 0.74);*/
+        /*#seeMoreImg {*/
+        /*    width: 100px;*/
+        /*    filter: drop-shadow(10px 4px 6px #020100);*/
+        /*    !*position: relative;*!*/
+        /*    padding-left: 0px;*/
+        /*    padding-top: 10px;*/
+        /*    top: 350px;*/
+        /*    height: 150px;*/
+        /*    position: absolute;*/
+        /*}*/
+
+        /*#seeMoreImg:active {*/
+        /*    width: 500px;*/
+        /*}*/
+
+        #seeMoreProject:hover {
+            width: 100px;
+            height: 50px;
+            background-color: rgba(56, 120, 184, 0.74);
             /*top: 100%;*/
             /*left: 50%;*/
             /*position: absolute;*/
             /*border-radius: 10%;*/
             /*animation: none;*/
             cursor: pointer;
+
         }
 
-        #seeMoreP {
+        #seeMoreProjectP {
             /*color: #fdfdfd;*/
             font-size: 25px;
             /*top: 0;*/
@@ -960,10 +987,13 @@
             /*margin: auto;*/
             /*position: absolute;*/
             color: red;
-            top: -40px;
+            top: -50px;
             left: 800px;
             position: absolute;
         }
+  /*#seeMoreProjectP:hover{*/
+  /*          cursor: pointer;*/
+  /*      }*/
 
         /*education*/
         main > section > section:nth-child(5) {
@@ -1149,7 +1179,9 @@
 
         main > section > section:nth-child(5) > p {
             background-color: #d7c5c5;
+
         }
+
 
         /*contact*/
         main > section > section:nth-child(6) > div {
@@ -1587,7 +1619,8 @@
         <section>
             <div><h1>Project</h1></div>
 
-
+<!--            <a href=" http://localhost:63342/MyProfile/Project.html?_ijt=pd8ikj7ie8kclqe06mp8og4jjc"><p-->
+<!--                    id="seeMoreProjectP"> See More </p></a>-->
             <section>
                 <!-- image -->
                 <!--                <img alt="super_wholesale image" id="superWholesaleImg" src="assets/images/super_wholesale.jfif">-->
@@ -1651,16 +1684,18 @@
                         alt="Animation Case3" id="ACase3" src="assets/images/ACase3.PNG"></a>
                 <figcaption>Animation Case3</figcaption>
                 <!--                ACase4-->
-                <a href="http://localhost:63342/MyProfile/myProjects/css/Animation/Case4/CssAnimationCase_04.html?_ijt=9590rnubbso6i6d65vm40h94kc"><img
+                <!--                <a href="http://localhost:63342/MyProfile/myProjects/css/Animation/Case4/CssAnimationCase_04.html?_ijt=9590rnubbso6i6d65vm40h94kc"><img-->
+                <!--                        alt="Animation Case4" id="ACase4" src="assets/images/ACase4.PNG"></a>-->
+                <!--                <figcaption>Animation Case4</figcaption>-->
+                <a href="myProjects/css/Animation/Case4/CssAnimationCase_04.html"><img
                         alt="Animation Case4" id="ACase4" src="assets/images/ACase4.PNG"></a>
                 <figcaption>Animation Case4</figcaption>
 
             </section>
-            <section id="seeMoreSec">
+            <section id="seeMoreProject">
                 <a href=" http://localhost:63342/MyProfile/Project.html?_ijt=pd8ikj7ie8kclqe06mp8og4jjc"><p
-                        id="seeMoreP"> See More </p></a>
+                        id="seeMoreProjectP"> See More </p></a>
             </section>
-
 
         </section>
         <section>
@@ -1669,9 +1704,10 @@
             <div>
                 <!-- image -->
                 <img alt="ijse icon" id="ijseImg" src="assets/images/ijse.png">
-                <p>
-                    IJSE <abbr title="Graduate Diploma Software Engineering">GDSE</abbr>
-                </p>
+                <pre>
+<!--                    IJSE <abbr title="Graduate Diploma Software Engineering">Graduate Diploma Software Engineering</abbr>-->
+                    IJSE GDSE Programming 57 batch Undergraduate
+                </pre>
             </div>
             <!--            <h1>Education</h1>-->
             <!-- image -->
